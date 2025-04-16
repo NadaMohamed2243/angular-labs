@@ -15,6 +15,11 @@ export const routes: Routes = [
     loadComponent: () => import('./contact/contact.component').then(m => m.ContactComponent),
     title: 'Contact Us'
   },
+  {
+    path: 'products',
+    loadComponent: () => import('./products/products.component').then(m => m.ProductsComponent),
+    title: 'products'
+  },
 
 
   {path:'**', component: NotfoundComponent , title:'404 Not Found'}
